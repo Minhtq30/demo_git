@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Moshop</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-content">
+            <!-- Header -->
+            <ul class="headtext">
+                <div class="logo">
+                    <h3>moshop</h3>
+                </div>
+                <div class="line"></div>
+                <li class="headlist" id="list2"><b>0983112233 </b><i class="fas fa-chevron-down"></i>
+                    <!-- dropdown -->
+                    <div class="dropdown-content">
+
+                        <a href="" class="drop">Thông tin nhân viên</a>
+                        <a href="" class="drop">Thông tin cửa hàng</a>
+                        <a href="" class="drop">Quản lí tag</a>
+                        <a href="" class="drop">Đăng xuất</a>
+
+                    </div>
+
+                </li>
+                <li class="headlist" id="list3"><i class="ti-comment-alt"></i><b> Chats</b></li>
+                <li class="headlist" id="list4"><i class="ti-dropbox"></i><b> Kho và sản phẩm</b></li>
+                <li class="headlist" id="list5"><i class="ti-check-box"></i><b> Đơn hàng</b></li>
+                <li class="headlist" id="list6"><i class="fas fa-upload"></i><b> Đăng đơn</b></li>
+            </ul>
+            <!-- avatar and status -->
+            <div class="avatar">
+                <img src="./assets/image/london-2393098.jpg" alt="ảnh 1">
+                <p><b>Trần Quang Minh / 0384137196</b></p>
+                <p class="status-title"><b>Trạng thái</b>
+                    <select name="status" id="status">
+                        <option value="Working">Đang làm việc</option>
+                        <option value="Not Working">Đã nghỉ</option>
+                        <option value="others">Khác</option>
+                    </select>
+                </p>
+            </div>
+
+        </div>
+        <!-- work field -->
+        <div class="work-result">
+            <fieldset class="fieldset1">
+                <legend>Kết quả công việc</legend>
+                <ul class="choose">
+                    <li class="Option">Hôm nay</li>
+                    <li class="Option">Tuần này</li>
+                    <li class="Option">Tháng này</li>
+                    <li class="Option"><button type="button" id="optional">Tùy chọn</button></li>
+                    <!-- option form -->
+                    <div id="form-option">
+                        <header class="head-form">
+                            <p id="op-head">Tùy chọn</p>
+                        </header>
+                        <div class="input-date">
+                            <input type="date">
+                            <input type="date">
+                        </div>
+                        <footer id="foot-form">
+                            <p><button type="button" id="confirm">Xác nhận</button></p>
+                            <p><button type="button" id="cancel">Hủy bỏ</button></p>
+                        </footer>
+                    </div>
+                </ul>
+                <!-- result form -->
+                <div class="form-result">
+                    <table class="table-result">
+                        <tr class="thead">
+                            <th class="result">KH tương tác</th>
+                            <th class="result">KH có SĐT</th>
+                            <th class="result">KH đã gọi</th>
+                            <th class="result">ĐH đã chốt</th>
+                            <th class="result">Tỷ lệ chốt</th>
+                            <th class="result">ĐH thành công</th>
+                            <th class="result">ĐH hoàn</th>
+                            <th class="result">Doanh thu</th>
+                            <th class="result">Phí hoàn</th>
+                            <th class="result">Thời gian phản hồi TB</th>
+                        </tr>
+                        <tr>
+                            <td class="result">100</td>
+                            <td class="result">100</td>
+                            <td class="result">80</td>
+                            <td class="result">70</td>
+                            <td class="result">70%</td>
+                            <td class="result">60</td>
+                            <td class="result">10</td>
+                            <td class="result">12.000.000</td>
+                            <td class="result">300.000</td>
+                            <td class="result">10m34s</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- salary form -->
+                <div class="form-salary">
+                    <table class="table-salary">
+                        <tr>
+                            <th class="underline" id="salary" rowspan="2"><u>Gói thu nhập 1</u></th>
+                            <th class="salary">Số ngày công</th>
+                            <th class="salary">Lương cứng</th>
+                            <th class="salary">Thưởng</th>
+                            <th>Tổng thu nhập</th>
+                        </tr>
+                        <tr>
+                            <td class="salary">26</td>
+                            <td class="salary">8.000.000</td>
+                            <td class="salary">7.000.000</td>
+                            <td class="underline" id="salary"><u>15.000.000</u></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+        <!-- infomation and history field -->
+        <div class="divide">
+            <!-- infomation field -->
+            <div class="work-infomation">
+                <fieldset class="fieldset2">
+                    <legend>Thông tin công việc</legend>
+                    <div class="text-info">
+                        <div>
+                            <p class="textbox">Ngày bắt đầu làm việc
+                                <input type="date" id="startTime">
+                                <input type="datetime" value="YYYY-mm-dd">
+                            </p>
+                            <p class="textbox">Nơi làm việc <input type="text" id="place"></p>
+                        </div>
+                        <div class="work-time1">
+                            <p>Thời gian làm việc</p>
+                            <p>1.Từ <input type="time" id="startwork"> đến <input type="time" id="endwork"></p>
+                            <p class="week-title">Lặp lại</p>
+                            <ul class="week-list">
+                                <li class="week">Thứ 2</li>
+                                <li class="week">Thứ 3</li>
+                                <li class="week">Thứ 4</li>
+                                <li class="week">Thứ 5</li>
+                                <li class="week">Thứ 6</li>
+                                <li class="week">Thứ 7</li>
+                                <li class="weekend">Chủ nhật</li>
+                            </ul>
+                        </div>
+                        <div class="work-time2">
+                            <p>2.Từ <input type="time" id="startwork"> đến <input type="time" id="endwork"></p>
+                            <p class="week-title">Lặp lại</p>
+                            <ul class="week-list">
+                                <li class="week">Thứ 2</li>
+                                <li class="week">Thứ 3</li>
+                                <li class="week">Thứ 4</li>
+                                <li class="week">Thứ 5</li>
+                                <li class="week">Thứ 6</li>
+                                <li class="week">Thứ 7</li>
+                                <li class="weekend">Chủ nhật</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Màn hình được sử dụng</p>
+                            <input type="checkbox" class="check1">
+                            <label>Chats</label><br>
+                            <input type="checkbox" class="check2">
+                            <label>4587</label><br>
+                            <input type="checkbox" class="check2">
+                            <label>Tạp chí BĐS Nha Trang</label><br>
+                            <input type="checkbox" class="check2">
+                            <label>Vẽ vời</label><br>
+                            <input type="checkbox" class="check2">
+                            <label>Page bán hàng</label><br>
+                            <input type="checkbox" class="check1">
+                            <label>Đơn hàng(Quản lý và đăng đơn GHTK)</label><br>
+                            <input type="checkbox" class="check1">
+                            <label>Khách hàng(Quản lý và chăm sóc KH)</label><br>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- history field -->
+            <div class="history">
+                <fieldset class="fieldset3">
+                    <legend>Lịch sử hoạt động</legend>
+                    <ul class="choose">
+                        <li class="Option">Hôm nay</li>
+                        <li class="Option">Tuần này</li>
+                        <li class="Option">Tháng này</li>
+                        <li class="Option"><button type="button" id="optional">Tùy chọn</button></li>
+                    </ul>
+                    <div class="table-product">
+                        <table>
+                            <tr>
+                                <th>Hôm nay - Thứ tư,ngày 14/4/2021</th>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã đăng thành công 120 ĐH</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244421</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <th>Hôm nay - Thứ tư,ngày 14/4/2021</th>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã đăng thành công 120 ĐH</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244421</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <th>Hôm nay - Thứ tư,ngày 14/4/2021</th>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã đăng thành công 120 ĐH</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244421</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <th>Hôm nay - Thứ tư,ngày 14/4/2021</th>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã đăng thành công 120 ĐH</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244421</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <th>Hôm nay - Thứ tư,ngày 14/4/2021</th>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã đăng thành công 120 ĐH</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244421</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 14/04/2021</td>
+                                <td>Đã tạo 1 SP mới,Mã SP PN,1231412415,1244412</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+            </fieldset>
+        </div>
+    </div>
+    <script>
+        var container = document.getElementsByClassName('container');
+        var form = document.getElementById("form-option");
+        var btn = document.getElementById("optional");
+        var confirm = document.getElementById("foot-form");
+        var cancel = document.getElementById("foot-form");
+        btn.onclick = () => {
+            form.style.display = "inline-block";
+            form.style.position = "absolute";
+            container.style.backgroundColor = "grey";
+        }
+        confirm.onclick = () => {
+            form.style.display = "none";
+        }
+        cancel.onclick = () => {
+            form.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
